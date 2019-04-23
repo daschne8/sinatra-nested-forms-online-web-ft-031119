@@ -5,13 +5,19 @@
     <title></title>
   </head>
   <body>
-    <form class="" action="/new" method="post">
-      <label for="name">Name :</label>
-        <input type="text" name="name" id="name">
-      <label for="weight">Weight:</label>
-        <input type="text" name="weight" id="weight">
-      <label for="height">Height:</label>
-        <input type="text" name="height" id="height">
+    <form action="/pirates" method="post">
+      Name: <input type="text" name="pirate[name]">
+      Weight: <input type="text" name="pirate[weight]">
+      Height: <input type="text" name="pirate[height]">
+      <h2>Ship 1</h2>
+        Ship Name:<input type="text" name="pirate[ships][][name]" id="ship_name_1">
+        Ship Type:<input type="text" name="pirate[ships][][type]" id="ship_type_1">
+        Ship Booty:<input type="text" name="pirate[ships][][booty]" id="ship_booty_1">
+      <h2>Ship 2</h2>
+        Ship Name:<input type="text" name="pirate[ships][][name]" id="ship_name_2">
+        Ship Type:<input type="text" name="pirate[ships][][type]" id="ship_type_2">
+        Ship Booty:<input type="text" name="pirate[ships][][booty]" id="ship_booty_2">
+      <input type="submit" value="Submit">
     </form>
   </body>
 </html>
